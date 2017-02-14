@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Root password pour les deux serveurs (doit être le même)
+db_password=""
+# Dossier de stockage MySQL pour les deux serveurs (doit être le même)
+db_folder="/var/lib/mysql"
+# Dossier de stockage MySQL temporaire (backup/recup) pour les deux serveurs (doit être le même)
+db_folder_backup="/home/backup/mysql_sync"
+# Serveur Maître (pour paramétrer l'esclave)
+master_server=""
+# Utilisateur replication sur le maître (pour paramétrer l'esclave)
+master_replication_user="replic"
+# Mot de passe pour l'utilisateur replication sur le maître (pour paramétrer l'esclave)
+master_replication_password=""
+# Slave server
+slave_server=""
+
