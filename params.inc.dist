@@ -15,3 +15,15 @@ master_replication_password=""
 # Slave server
 slave_server=""
 
+# Replication verif
+slave_hostname=`hostname`
+cmd_slave_hostname="-h localhost"
+cmd_slave_username="-ureplication_cron"
+cmd_slave_userpass="-ppassword"
+slave_verif_email_from="mysql@$server_hostname"
+slave_verif_email_to="root@$server_hostname"
+slave_verif_email_subject="Replication is Down on $server_hostname"
+tmp_replication_slave_log_filepath="/tmp/replication_slave_log.txt"
+tmp_replication_slave_reason_filepath="/tmp/replication_slave_reason.txt"
+slave_verif_seconds_min=3600
+
